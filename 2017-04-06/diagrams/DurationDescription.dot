@@ -1,0 +1,16 @@
+// Diagram for DurationDescription
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		DurationDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">DurationDescription</TD></TR><HR/><TR><TD ALIGN="LEFT">«refined» «only» days: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» hours: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» minutes: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» months: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» seconds: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» weeks: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«refined» «only» years: xsd:decimal</TD></TR></TABLE>> URL="../DurationDescription" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	GeneralDurationDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">GeneralDurationDescription</TD></TR></TABLE>> URL="../GeneralDurationDescription" margin=0]
+	DurationDescription -> GeneralDurationDescription [arrowhead=onormal style=solid]
+}

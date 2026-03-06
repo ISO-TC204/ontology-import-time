@@ -1,0 +1,27 @@
+// Diagram for GeneralDateTimeDescription
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		GeneralDateTimeDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">GeneralDateTimeDescription</TD></TR><HR/><TR><TD ALIGN="LEFT">«max 1» day: xsd:string</TD></TR><TR><TD ALIGN="LEFT">«max 1» dayOfYear: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» hour: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» minute: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» month: xsd:string</TD></TR><TR><TD ALIGN="LEFT">«max 1» second: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«max 1» week: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» year: xsd:string</TD></TR></TABLE>> URL="../GeneralDateTimeDescription" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+		owl_Thing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">owl:Thing</TD></TR></TABLE>> margin=0]
+	}
+	TemporalPosition [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TemporalPosition</TD></TR></TABLE>> URL="../TemporalPosition" margin=0]
+	GeneralDateTimeDescription -> TemporalPosition [arrowhead=onormal style=solid]
+	GeneralDateTimeDescription -> Invis [style=invis]
+	Invis -> owl_Thing [style=invis]
+	GeneralDateTimeDescription -> owl_Thing [label=" unitType 
+ «exactly 1»  " arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=" dayOfWeek 
+ «max 1»  " arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=" monthOfYear 
+ «max 1»  " arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=" timeZone 
+ «max 1»  " arrowhead=normal style=solid]
+}
