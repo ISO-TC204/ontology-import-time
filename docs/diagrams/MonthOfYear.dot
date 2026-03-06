@@ -1,0 +1,16 @@
+// Diagram for MonthOfYear
+digraph {
+	graph [overlap=false rankdir=TB splines=true]
+	node [fontname=Arial fontsize=12 margin=0 shape=none]
+	edge [fontname=Arial fontsize=11]
+	{
+		rank=max
+		MonthOfYear [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">MonthOfYear</TD></TR><HR/><TR><TD ALIGN="LEFT">«refined» day: xsd:string</TD></TR><TR><TD ALIGN="LEFT">hour: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">minute: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«refined» «exactly 1» month: xsd:string</TD></TR><TR><TD ALIGN="LEFT">second: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">week: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«refined» year: xsd:string</TD></TR></TABLE>> URL="../MonthOfYear" margin=0]
+	}
+	subgraph cluster_associated {
+		label="" style=invis
+		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
+	}
+	DateTimeDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">DateTimeDescription</TD></TR></TABLE>> URL="../DateTimeDescription" margin=0]
+	MonthOfYear -> DateTimeDescription [arrowhead=onormal style=solid]
+}
