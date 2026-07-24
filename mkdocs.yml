@@ -2,29 +2,95 @@ site_name: W3C Time Ontology
 site_description: The W3C time ontology converted into a website
 repo_url: https://github.com/ISO-TC204/ontology-import-time
 nav:
-- Home: index.md
-- Time Pattern:
-  - Time Pattern: TimePattern.md
-  - Date Time Description: DateTimeDescription.md
-  - Date Time Interval: DateTimeInterval.md
-  - Day Of Week: DayOfWeek.md
-  - Duration: Duration.md
-  - Duration Description: DurationDescription.md
-  - General Date Time Description: GeneralDateTimeDescription.md
-  - General Duration Description: GeneralDurationDescription.md
-  - Instant: Instant.md
-  - Interval: Interval.md
-  - January: January.md
-  - Month Of Year: MonthOfYear.md
-  - Proper Interval: ProperInterval.md
-  - Temporal Duration: TemporalDuration.md
-  - Temporal Entity: TemporalEntity.md
-  - Temporal Position: TemporalPosition.md
-  - Temporal Unit: TemporalUnit.md
-  - Time Position: TimePosition.md
-  - Time Zone: TimeZone.md
-  - TRS: TRS.md
-  - Year: Year.md
+- TC204 on ISO.org: https://www.iso.org/committee/54706.html
+- TC 204 Home: https://isotc204.org/
+- RITSO Home: https://isotc204.org/ritso/
+- W3C Time Ontology:
+  - Home: index.md
+  - Classes:
+    - Date Time Description: classes/DateTimeDescription.md
+    - Date Time Interval: classes/DateTimeInterval.md
+    - Day Of Week: classes/DayOfWeek.md
+    - Duration: classes/Duration.md
+    - Duration Description: classes/DurationDescription.md
+    - General Date Time Description: classes/GeneralDateTimeDescription.md
+    - General Duration Description: classes/GeneralDurationDescription.md
+    - Instant: classes/Instant.md
+    - Interval: classes/Interval.md
+    - January: classes/January.md
+    - Month Of Year: classes/MonthOfYear.md
+    - Proper Interval: classes/ProperInterval.md
+    - Temporal Duration: classes/TemporalDuration.md
+    - Temporal Entity: classes/TemporalEntity.md
+    - Temporal Position: classes/TemporalPosition.md
+    - Temporal Unit: classes/TemporalUnit.md
+    - Time Position: classes/TimePosition.md
+    - Time Zone: classes/TimeZone.md
+    - Trs: classes/TRS.md
+    - Year: classes/Year.md
+  - Properties:
+    - after: properties/after.md
+    - before: properties/before.md
+    - day: properties/day.md
+    - dayOfWeek: properties/dayOfWeek.md
+    - dayOfYear: properties/dayOfYear.md
+    - days: properties/days.md
+    - hasBeginning: properties/hasBeginning.md
+    - hasDateTimeDescription: properties/hasDateTimeDescription.md
+    - hasDuration: properties/hasDuration.md
+    - hasDurationDescription: properties/hasDurationDescription.md
+    - hasEnd: properties/hasEnd.md
+    - hasTemporalDuration: properties/hasTemporalDuration.md
+    - hasTime: properties/hasTime.md
+    - hasTRS: properties/hasTRS.md
+    - hasXSDDuration: properties/hasXSDDuration.md
+    - hour: properties/hour.md
+    - hours: properties/hours.md
+    - inDateTime: properties/inDateTime.md
+    - inside: properties/inside.md
+    - inTemporalPosition: properties/inTemporalPosition.md
+    - intervalAfter: properties/intervalAfter.md
+    - intervalBefore: properties/intervalBefore.md
+    - intervalContains: properties/intervalContains.md
+    - intervalDisjoint: properties/intervalDisjoint.md
+    - intervalDuring: properties/intervalDuring.md
+    - intervalEquals: properties/intervalEquals.md
+    - intervalFinishedBy: properties/intervalFinishedBy.md
+    - intervalFinishes: properties/intervalFinishes.md
+    - intervalIn: properties/intervalIn.md
+    - intervalMeets: properties/intervalMeets.md
+    - intervalMetBy: properties/intervalMetBy.md
+    - intervalOverlappedBy: properties/intervalOverlappedBy.md
+    - intervalOverlaps: properties/intervalOverlaps.md
+    - intervalStartedBy: properties/intervalStartedBy.md
+    - intervalStarts: properties/intervalStarts.md
+    - inTimePosition: properties/inTimePosition.md
+    - inXSDDate: properties/inXSDDate.md
+    - inXSDDateTime: properties/inXSDDateTime.md
+    - inXSDDateTimeStamp: properties/inXSDDateTimeStamp.md
+    - inXSDgYear: properties/inXSDgYear.md
+    - inXSDgYearMonth: properties/inXSDgYearMonth.md
+    - minute: properties/minute.md
+    - minutes: properties/minutes.md
+    - month: properties/month.md
+    - monthOfYear: properties/monthOfYear.md
+    - months: properties/months.md
+    - nominalPosition: properties/nominalPosition.md
+    - numericDuration: properties/numericDuration.md
+    - numericPosition: properties/numericPosition.md
+    - second: properties/second.md
+    - seconds: properties/seconds.md
+    - timeZone: properties/timeZone.md
+    - unitType: properties/unitType.md
+    - week: properties/week.md
+    - weeks: properties/weeks.md
+    - xsdDateTime: properties/xsdDateTime.md
+    - year: properties/year.md
+    - years: properties/years.md
+  - Datatypes:
+    - generalDay: datatypes/generalDay.md
+    - generalMonth: datatypes/generalMonth.md
+    - generalYear: datatypes/generalYear.md
 site_url: https://isotc204.org/ontology-import-time
 copyright: <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/">
   <a href="https://creativecommons.org/licenses/by/4.0/?ref=chooser-v1" target="_blank"
@@ -40,6 +106,8 @@ theme:
   - content.tooltips
   - icons
   - navigation.path
+  - navigation.tabs
+  - navigation.tabs.sticky
   - navigation.top
   icon:
     repo: fontawesome/brands/github

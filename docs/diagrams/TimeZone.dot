@@ -4,8 +4,11 @@ digraph {
 	node [fontname=Arial fontsize=12 margin=0 shape=none]
 	edge [fontname=Arial fontsize=11]
 	{
+		rank=source
+	}
+	TimeZone [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TimeZone</TD></TR></TABLE>> URL="../TimeZone" margin=0]
+	{
 		rank=max
-		TimeZone [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">TimeZone</TD></TR></TABLE>> URL="../TimeZone" margin=0]
 	}
 	subgraph cluster_associated {
 		label="" style=invis
