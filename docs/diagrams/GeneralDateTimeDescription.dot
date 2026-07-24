@@ -4,24 +4,24 @@ digraph {
 	node [fontname=Arial fontsize=12 margin=0 shape=none]
 	edge [fontname=Arial fontsize=11]
 	{
+		rank=source
+		TemporalPosition [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TemporalPosition</TD></TR></TABLE>> URL="../TemporalPosition" margin=0]
+	}
+	GeneralDateTimeDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">GeneralDateTimeDescription</TD></TR><TR><TD ALIGN="LEFT">day</TD></TR><TR><TD ALIGN="LEFT">dayOfYear : xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">hour : xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">minute : xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">month</TD></TR><TR><TD ALIGN="LEFT">second : xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">week : xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">year</TD></TR></TABLE>> URL="../GeneralDateTimeDescription" margin=0]
+	{
 		rank=max
-		GeneralDateTimeDescription [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER" PORT="e">GeneralDateTimeDescription</TD></TR><HR/><TR><TD ALIGN="LEFT">«max 1» day: xsd:string</TD></TR><TR><TD ALIGN="LEFT">«max 1» dayOfYear: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» hour: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» minute: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» month: xsd:string</TD></TR><TR><TD ALIGN="LEFT">«max 1» second: xsd:decimal</TD></TR><TR><TD ALIGN="LEFT">«max 1» week: xsd:nonNegativeInteger</TD></TR><TR><TD ALIGN="LEFT">«max 1» year: xsd:string</TD></TR></TABLE>> URL="../GeneralDateTimeDescription" margin=0]
 	}
 	subgraph cluster_associated {
 		label="" style=invis
 		Invis [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD></TD></TR></TABLE>> margin=0 style=invis]
-		owl_Thing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">owl:Thing</TD></TR></TABLE>> margin=0]
+		owl_Thing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">owl:Thing</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/owl/latest/Thing" margin=0]
 	}
-	TemporalPosition [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">TemporalPosition</TD></TR></TABLE>> URL="../TemporalPosition" margin=0]
 	GeneralDateTimeDescription -> TemporalPosition [arrowhead=onormal style=solid]
 	GeneralDateTimeDescription -> Invis [style=invis]
 	Invis -> owl_Thing [style=invis]
-	GeneralDateTimeDescription -> owl_Thing [label=" unitType 
- «exactly 1»  " arrowhead=normal style=solid]
-	GeneralDateTimeDescription -> owl_Thing [label=" dayOfWeek 
- «max 1»  " arrowhead=normal style=solid]
-	GeneralDateTimeDescription -> owl_Thing [label=" monthOfYear 
- «max 1»  " arrowhead=normal style=solid]
-	GeneralDateTimeDescription -> owl_Thing [label=" timeZone 
- «max 1»  " arrowhead=normal style=solid]
+	owl_Thing [label=<<TABLE BORDER="1" CELLBORDER="0" CELLSPACING="0" CELLPADDING="1"><TR><TD BGCOLOR="lightgray" ALIGN="CENTER">owl:Thing</TD></TR></TABLE>> URL="https://w3id.org/citydata/imported/owl/latest/Thing" margin=0]
+	GeneralDateTimeDescription -> owl_Thing [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">unitType</TD></TR><TR><TD ALIGN="CENTER">1</TD></TR></TABLE>> arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">dayOfWeek</TD></TR><TR><TD ALIGN="CENTER">0..1</TD></TR></TABLE>> arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">monthOfYear</TD></TR><TR><TD ALIGN="CENTER">0..1</TD></TR></TABLE>> arrowhead=normal style=solid]
+	GeneralDateTimeDescription -> owl_Thing [label=<<TABLE BORDER="0" CELLBORDER="0" CELLSPACING="0" CELLPADDING="4" BGCOLOR="white"><TR><TD ALIGN="CENTER">timeZone</TD></TR><TR><TD ALIGN="CENTER">0..1</TD></TR></TABLE>> arrowhead=normal style=solid]
 }
